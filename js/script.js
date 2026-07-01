@@ -18,3 +18,58 @@ function typeWriter() {
 }
 
 typeWriter();
+const themeButton = document.getElementById("theme-toggle");
+
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark");
+    themeButton.textContent="☀️";
+
+}
+
+themeButton.addEventListener("click",()=>{
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+
+        themeButton.textContent="☀️";
+
+        localStorage.setItem("theme","dark");
+
+    }else{
+
+        themeButton.textContent="🌙";
+
+        localStorage.setItem("theme","light");
+
+    }
+
+});
+const topButton = document.getElementById("topButton");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY > 300){
+
+        topButton.style.display="block";
+
+    }else{
+
+        topButton.style.display="none";
+
+    }
+
+});
+
+topButton.addEventListener("click",()=>{
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
