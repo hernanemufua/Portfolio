@@ -27,23 +27,13 @@ if(localStorage.getItem("theme") === "dark"){
 
 }
 
-themeButton.addEventListener("click",()=>{
+themeButton.addEventListener("click", () => {
+
+    console.log("Clique detectado");
 
     document.body.classList.toggle("dark");
 
-    if(document.body.classList.contains("dark")){
-
-        themeButton.textContent="☀️";
-
-        localStorage.setItem("theme","dark");
-
-    }else{
-
-        themeButton.textContent="🌙";
-
-        localStorage.setItem("theme","light");
-
-    }
+    console.log("Dark?", document.body.classList.contains("dark"));
 
 });
 const topButton = document.getElementById("topButton");
