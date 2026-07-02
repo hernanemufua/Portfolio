@@ -594,3 +594,80 @@ body.dark h3{
     color:#2563EB;
 
 }
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.logo-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563EB,#60A5FA);
+
+    color:white;
+
+}
+
+.logo-card h1{
+
+    font-size:120px;
+
+    font-weight:700;
+
+}
+
+.logo-card p{
+
+    font-size:22px;
+
+    text-align:center;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+body.dark .about{
+    background:#111827;
+}
+
+body.dark .skills{
+    background:#0F172A;
+}
+
+body.dark .photo-card{
+    background:#1F2937;
+}
+
+body.dark .social-links a{
+    color:#E5E7EB;
+}
+
+body.dark .btn-secondary{
+    color:#60A5FA;
+    border-color:#60A5FA;
+}
+
+body.dark .about-text h2,
+body.dark .skills h2{
+    color:white;
+}
