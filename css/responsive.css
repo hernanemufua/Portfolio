@@ -42,13 +42,61 @@
 
     .header .container{
 
-        height:auto;
+        height:80px;
 
-        padding:20px 0;
+        display:flex;
 
-        flex-direction:column;
+        justify-content:space-between;
 
-        gap:20px;
+        align-items:center;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .btn-contact{
+
+        display:none;
+
+    }
+
+    .theme-btn{
+
+        display:none;
+
+    }
+
+    .navbar{
+
+        position:absolute;
+
+        top:80px;
+
+        left:0;
+
+        width:100%;
+
+        background:#fff;
+
+        display:none;
+
+        box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+    }
+
+    body.dark .navbar{
+
+        background:#1F2937;
+
+    }
+
+    .navbar.active{
+
+        display:block;
 
     }
 
@@ -56,54 +104,19 @@
 
         flex-direction:column;
 
-        gap:15px;
+        padding:30px;
 
-        text-align:center;
-
-    }
-
-    .hero{
-
-        padding-top:180px;
+        gap:25px;
 
     }
 
-    .hero-left h1{
+}
+.hero{
 
-        font-size:42px;
-
-    }
-
-    .hero-left h2{
-
-        font-size:28px;
-
-    }
-
-    .hero-buttons{
-
-        flex-direction:column;
-
-        align-items:center;
-
-    }
-
-    .btn-primary,
-    .btn-secondary{
-
-        width:220px;
-
-        text-align:center;
-
-    }
-
-    .photo-card{
-
-        width:280px;
-
-        height:360px;
-
-    }
+    padding-top:140px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
 
 }
 /* ==========================

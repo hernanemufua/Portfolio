@@ -575,3 +575,18 @@ body.dark h3{
     transform:translateY(-4px);
 
 }
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:#2563EB;
+
+}
