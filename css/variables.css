@@ -1,0 +1,59 @@
+/* ===================================
+   VARIÁVEIS GLOBAIS
+=================================== */
+
+:root{
+
+    /* Cores principais */
+
+    --primary:#2563EB;
+    --primary-light:#60A5FA;
+
+    /* Backgrounds */
+
+    --bg:#F8FAFC;
+    --surface:#FFFFFF;
+    --surface-2:#F3F4F6;
+
+    /* Texto */
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    /* Bordas */
+
+    --border:#E5E7EB;
+
+    /* Sombras */
+
+    --shadow-sm:0 8px 20px rgba(0,0,0,.05);
+    --shadow-md:0 15px 35px rgba(0,0,0,.08);
+    --shadow-lg:0 25px 50px rgba(0,0,0,.12);
+
+    /* Header */
+
+    --header-bg:rgba(255,255,255,.65);
+
+}
+
+/* ===================================
+   DARK MODE
+=================================== */
+
+body.dark{
+
+    --bg:#111827;
+
+    --surface:#1F2937;
+
+    --surface-2:#0F172A;
+
+    --text:#F9FAFB;
+
+    --text-light:#D1D5DB;
+
+    --border:#374151;
+
+    --header-bg:rgba(17,24,39,.75);
+
+}
