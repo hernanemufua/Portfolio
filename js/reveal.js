@@ -1,20 +1,16 @@
 const reveals = document.querySelectorAll(".reveal");
 
-function revealOnScroll() {
-    const windowHeight = window.innerHeight;
-
-    reveals.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
-
-        // Quando o elemento entra na tela
-        if (elementTop < windowHeight - 120) {
-            element.classList.add("active");
-        }
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
     });
+
+    reveals.forEach(item => observer.observe(item));
 }
-
-// Executa ao scroll
-window.addEventListener("scroll", revealOnScroll);
-
-// Executa ao carregar a página (para elementos já visíveis)
-revealOnScroll();

@@ -201,8 +201,13 @@ body{
     backdrop-filter:blur(20px);
     border-bottom:1px solid #E5E7EB;
     z-index:1000;
+    transition:.35s;
 }
 
+.header.scrolled{
+    height:70px;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
 .header .container{
     display:flex;
     justify-content:space-between;
@@ -216,6 +221,38 @@ body{
     color:#2563EB;
     text-decoration:none;
 }
+.logo-card{
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563EB,#60A5FA);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    box-shadow:0 25px 60px rgba(37,99,235,.35);
+
+}
+
+.logo-card h1{
+
+    font-size:90px;
+
+}
+
+.logo-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+}
 
 .navbar ul{
     display:flex;
@@ -224,20 +261,47 @@ body{
 }
 
 .navbar a{
+    position:relative;
     text-decoration:none;
     color:#374151;
     font-weight:500;
-    transition:0.3s;
+    padding:6px 0;
+    transition:color .3s;
+}
+/* ==========================
+   MENU
+========================== */
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+
+    width:0;
+    height:2px;
+
+    background:#2563EB;
+    transition:width .35s ease;
+}
+
+.navbar a:hover::after{
+    width:100%;
 }
 
 .navbar a:hover{
     color:#2563EB;
 }
-
 /* ==========================
    BUTTONS
 ========================== */
-
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:32px;
+    cursor:pointer;
+    color:#2563EB;
+}
 .btn-contact{
     background:#2563EB;
     color:white;
@@ -537,4 +601,16 @@ body.dark .contact{
 body.dark .footer{
     background:#111827;
     border-color:#374151;
+}
+#typing::after{
+    content:"|";
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
 }
