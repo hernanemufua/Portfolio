@@ -38,3 +38,23 @@
 .skill-card:nth-child(6){
     transition-delay: .6s;
 }
+/* Projeto da esquerda */
+.project-left{
+    opacity:0;
+    transform:translateX(-100px);
+    transition:all .8s ease;
+}
+
+/* Projeto da direita */
+.project-right{
+    opacity:0;
+    transform:translateX(100px);
+    transition:all .8s ease;
+}
+
+/* Quando aparecer */
+.project-left.active,
+.project-right.active{
+    opacity:1;
+    transform:translateX(0);
+}

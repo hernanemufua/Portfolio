@@ -1,4 +1,6 @@
-const reveals = document.querySelectorAll(".reveal");
+const reveals = document.querySelectorAll(
+    ".reveal, .project-left, .project-right"
+);
 
 if ("IntersectionObserver" in window) {
     const observer = new IntersectionObserver((entries) => {
