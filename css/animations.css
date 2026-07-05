@@ -38,6 +38,12 @@
 .skill-card:nth-child(6){
     transition-delay: .6s;
 }
+.skill-card:nth-child(7){
+    transition-delay: .7s;
+}
+.skill-card:nth-child(8){
+    transition-delay: .8s;
+}
 /* Projeto da esquerda */
 .project-left{
     opacity:0;
