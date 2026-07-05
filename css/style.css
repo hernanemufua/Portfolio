@@ -210,9 +210,16 @@ body{
 }
 .header .container{
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    height:80px;
+}
+
+.logo{
+    margin-right:50px;
+    margin-top: 30px;
+}
+
+.navbar{
+    margin-right:auto;
 }
 
 .logo{

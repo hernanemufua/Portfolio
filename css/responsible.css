@@ -123,6 +123,40 @@
 
 }
 /* ==========================
+   Modo Claro e Escuro no celular
+========================== */
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.theme-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    margin-right:12px;
+}
+
+.btn-contact{
+    display:none;
+}
+.header .container{
+    display:flex;
+    align-items:center;
+}
+
+.theme-btn{
+    order:2;
+}
+
+.menu-toggle{
+    order:3;
+    margin-left:12px;
+}
+/* ==========================
    CELULARES PEQUENOS
 ========================== */
 
